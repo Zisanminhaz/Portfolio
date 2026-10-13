@@ -1,0 +1,49 @@
+// =====================================================================
+//  COVID-19 Global Dashboard — DAX measures
+//  Table: covid_19_clean_complete  (one row per country per day)
+// =====================================================================
+
+// ---------------------------------------------------------------------
+// Measures used in the report (as shown in screenshots/dashboard.png)
+// They add up every daily row in the current filter context.
+// ---------------------------------------------------------------------
+Total Confirmed = SUM ( covid_19_clean_complete[Confirmed] )     // 829M
+Total Deaths    = SUM ( covid_19_clean_complete[Deaths] )        // 43M
+Total Recovered = SUM ( covid_19_clean_complete[Recovered] )     // 388M
+Total Active    = SUM ( covid_19_clean_complete[Active] )        // 397M
+
+
+// ---------------------------------------------------------------------
+// Latest-date variants
+// The source columns are cumulative running totals, so the number of
+// cases on a given day is the value on that day, not the sum of all days.
+// These return the figure on the last date in context
+// (all countries, 27 Jul 2020: 16,480,485 confirmed · 654,036 deaths ·
+//  9,468,087 recovered · 6,358,362 active).
+// ---------------------------------------------------------------------
+Confirmed (Latest) =
+CALCULATE (
+    SUM ( covid_19_clean_complete[Confirmed] ),
+    covid_19_clean_complete[Date] = MAX ( covid_19_clean_complete[Date] )
+)
+
+Deaths (Latest) =
+CALCULATE (
+    SUM ( covid_19_clean_complete[Deaths] ),
+    covid_19_clean_complete[Date] = MAX ( covid_19_clean_complete[Date] )
+)
+
+Recovered (Latest) =
+CALCULATE (
+    SUM ( covid_19_clean_complete[Recovered] ),
+    covid_19_clean_complete[Date] = MAX ( covid_19_clean_complete[Date] )
+)
+
+Active (Latest) =
+CALCULATE (
+    SUM ( covid_19_clean_complete[Active] ),
+    covid_19_clean_complete[Date] = MAX ( covid_19_clean_complete[Date] )
+)
+
+Case Fatality Rate % =
+DIVIDE ( [Deaths (Latest)], [Confirmed (Latest)] )       // 3.97%
