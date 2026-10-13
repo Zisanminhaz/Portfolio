@@ -203,7 +203,7 @@ function initResearchFiltering() {
 const researchDetails = {
   mango: {
     title: 'Explainable Hybrid InceptionV3-Vision Transformer Framework for Mango Leaf Disease Classification Using LIME and Grad-CAM',
-    venue: 'IEEE QPAIN (Quality, Reliability, Security and Robustness in Heterogeneous Networks) • Dec 2025',
+    venue: '2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAIN) • Apr 2026',
     link: 'https://ieeexplore.ieee.org/document/11546122',
     linkText: 'Open Official Paper on IEEE Xplore ↗',
     authors: 'Minhaz Alam Jisan, et al.',
@@ -223,19 +223,19 @@ const researchDetails = {
         <li><strong>LIME:</strong> Perturbs superpixel segments of input leaf images to train locally faithful interpretable linear surrogate models, proving that predictions rely on biological lesion necrosis rather than background soil or lighting artifacts.</li>
       </ul>
     `,
-    bibtex: `@inproceedings{jisan2025mango,
+    bibtex: `@inproceedings{jisan2026mango,
   title={Explainable Hybrid InceptionV3-Vision Transformer Framework for Mango Leaf Disease Classification Using LIME and Grad-CAM},
   author={Jisan, Minhaz Alam and others},
-  booktitle={IEEE International Conference on Quality, Reliability, Security and Robustness in Heterogeneous Networks (QPAIN)},
-  year={2025},
+  booktitle={2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAIN)},
+  year={2026},
   url={https://ieeexplore.ieee.org/document/11546122}
 }`
   },
 
   tea: {
     title: 'Lightweight CNNs and Explainable AI for Real-Time Tea Leaf Disease Detection',
-    venue: 'IDAA (International Conference on Intelligent Data Analysis and Applications) • Dec 2024',
-    link: 'http://researchgate.net/publication/399191646_Lightweight_Convolutional_Networks_and_Explainable_AI_for_Real-Time_and_Interpretable_Tea_Leaf_Disease_Detection',
+    venue: 'International Conference on Intelligent Data Analysis and Applications (IDAA) • Dec 2025',
+    link: 'https://www.researchgate.net/publication/399191646_Lightweight_Convolutional_Networks_and_Explainable_AI_for_Real-Time_and_Interpretable_Tea_Leaf_Disease_Detection',
     linkText: 'Open Official Publication on ResearchGate ↗',
     authors: 'Minhaz Alam Jisan, et al.',
     objective: 'Enable low-power edge mobile devices and field agronomists to diagnose tea plantation diseases with sub-second latency and zero cloud dependency.',
@@ -254,18 +254,18 @@ const researchDetails = {
         <li>Allows agricultural field workers to visually inspect and trust model diagnostic reasons before administering chemical fungicides.</li>
       </ul>
     `,
-    bibtex: `@inproceedings{jisan2024tea,
+    bibtex: `@inproceedings{jisan2025tea,
   title={Lightweight CNNs and Explainable AI for Real-Time Tea Leaf Disease Detection},
   author={Jisan, Minhaz Alam and others},
   booktitle={International Conference on Intelligent Data Analysis and Applications (IDAA)},
-  year={2024},
-  url={http://researchgate.net/publication/399191646_Lightweight_Convolutional_Networks_and_Explainable_AI_for_Real-Time_and_Interpretable_Tea_Leaf_Disease_Detection}
+  year={2025},
+  url={https://www.researchgate.net/publication/399191646_Lightweight_Convolutional_Networks_and_Explainable_AI_for_Real-Time_and_Interpretable_Tea_Leaf_Disease_Detection}
 }`
   },
 
   cancer: {
     title: 'Performance Comparison of Machine Learning and Ensemble Models for Breast Cancer Diagnosis',
-    venue: 'APCIT (Asia-Pacific Conference on Information Technology) • Dec 2024',
+    venue: 'Asia Pacific Conference on Innovation in Technology (APCIT) • Jul 2024',
     link: 'https://ieeexplore.ieee.org/abstract/document/11411169',
     linkText: 'Open Official Paper on IEEE Xplore ↗',
     authors: 'Minhaz Alam Jisan, et al.',
@@ -288,7 +288,7 @@ const researchDetails = {
     bibtex: `@inproceedings{jisan2024cancer,
   title={Performance Comparison of Machine Learning and Ensemble Models for Breast Cancer Diagnosis},
   author={Jisan, Minhaz Alam and others},
-  booktitle={Asia-Pacific Conference on Information Technology (APCIT)},
+  booktitle={Asia Pacific Conference on Innovation in Technology (APCIT)},
   year={2024},
   url={https://ieeexplore.ieee.org/abstract/document/11411169}
 }`
@@ -541,7 +541,7 @@ const projectDetails = {
     architecture: `
       <strong>Data Engineering & Pipeline:</strong>
       <ul>
-        <li>Cleaned 541,909 raw transactions to 530,106 rows using Python pandas (<code>clean_data.py</code>).</li>
+        <li>Cleaned 541,909 raw transactions to 530,106 rows using Power Query ETL.</li>
         <li>Removed 10,624 cancelled orders (<code>Quantity &le; 0</code>) and 1,179 zero-price rows.</li>
         <li>Processed 132,222 guest checkout lines with unassigned CustomerIDs as valid sales.</li>
       </ul>
@@ -568,7 +568,7 @@ const projectDetails = {
       <ul>
         <li>Cleaned 49,068 daily country-level observations from Johns Hopkins CSSE and Worldometer in Excel.</li>
         <li>Normalized geocoding across 187 countries and 6 WHO regions for bubble map accuracy.</li>
-        <li>Created automated Python script (<code>clean_data.py</code>) to validate headline counts.</li>
+        <li>Validated headline counts and data integrity directly within Excel.</li>
       </ul>
     `,
     daxSection: `
